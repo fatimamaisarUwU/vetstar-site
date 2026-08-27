@@ -1,0 +1,370 @@
+/* ===== ОБНУЛЕНИЕ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background: #fafafa;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ШАПКА ===== */
+.header {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo__text {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #00a86b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: #00a86b;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: #008f5a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 168, 107, 0.3);
+}
+
+.btn--big {
+    padding: 16px 40px;
+    font-size: 18px;
+    background: #00a86b;
+    color: #fff;
+}
+
+.btn--small {
+    padding: 8px 20px;
+    font-size: 14px;
+    background: #00a86b;
+    color: #fff;
+}
+
+/* ===== ГЛАВНЫЙ ЭКРАН ===== */
+.hero {
+    padding: 60px 0 80px;
+    background: linear-gradient(135deg, #f8fff9 0%, #e8f5e9 100%);
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero__content {
+    flex: 1;
+}
+
+.hero__badge {
+    display: inline-block;
+    background: #00a86b;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-bottom: 32px;
+}
+
+.hero__stats {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 36px;
+}
+
+.stat__number {
+    font-size: 28px;
+    font-weight: 800;
+    color: #00a86b;
+    display: block;
+}
+
+.stat__label {
+    font-size: 14px;
+    color: #666;
+}
+
+.hero__image {
+    flex: 1;
+}
+
+/* ===== УСЛУГИ ===== */
+.services {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 168, 107, 0.1);
+}
+
+.service-card__icon {
+    font-size: 36px;
+    color: #00a86b;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-card ul li {
+    padding: 4px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.service-card ul li::before {
+    content: "▸ ";
+    color: #00a86b;
+    font-weight: 700;
+}
+
+/* ===== АКЦИИ ===== */
+.promo {
+    padding: 80px 0;
+}
+
+.promo__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.promo-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #00a86b;
+}
+
+.promo-card--big {
+    border-left-color: #ff9800;
+    background: #fff8e1;
+}
+
+.promo-card__badge {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.promo-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.promo-card__price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #00a86b;
+    margin: 12px 0;
+}
+
+.promo-card__date {
+    font-size: 14px;
+    color: #888;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contacts {
+    padding: 80px 0;
+}
+
+.contacts__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contacts__info p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.socials {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #00a86b;
+    color: #fff;
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+}
+
+.contacts__form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contacts__form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contacts__form input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #eee;
+    border-radius: 16px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.contacts__form input:focus {
+    outline: none;
+    border-color: #00a86b;
+}
+
+/* ===== ПОДВАЛ ===== */
+.footer {
+    background: #1a1a1a;
+    color: #aaa;
+    padding: 24px 0;
+    text-align: center;
+}
+
+/* ===== АДАПТАЦИЯ ПОД ТЕЛЕФОН ===== */
+@media (max-width: 768px) {
+    .hero__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__stats {
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .contacts__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+}
