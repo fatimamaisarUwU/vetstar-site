@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetStar — Центр ветеринарной медицины</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Шрифты Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ========== ШАПКА (HEADER) ========== -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">
+                <img src="images/vetstar-logo.jpg" alt="VetStar логотип"
+                    style="height: 50px; width: auto; border-radius: 8px;">
+                <span class="logo__text" style="margin-left: 10px;">Vet<span style="color: #00a86b;">Star</span></span>
+            </div>
+            <nav class="nav">
+                <a href="#services">Услуги</a>
+                <a href="#doctors">Врачи</a>
+                <a href="#promo">Акции</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <a href="#appointment" class="btn btn--primary">Записаться <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- ========== ГЛАВНЫЙ ЭКРАН (HERO) ========== -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <span class="hero__badge">С 2011 года</span>
+                <h1 class="hero__title">Центр ветеринарной <br>медицины <span style="color: #00a86b;">VetStar</span>
+                </h1>
+                <p class="hero__subtitle">Ваша многопрофильная клиника с заботой о каждом питомце</p>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">419 648</span>
+                        <span class="stat__label">Спасённых жизней</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">105+</span>
+                        <span class="stat__label">Специалистов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">1070</span>
+                        <span class="stat__label">Услуг</span>
+                    </div>
+                </div>
+                <a href="#appointment" class="btn btn--big">Записать питомца <i class="fas fa-heart"></i></a>
+            </div>
+            <div class="hero__image">
+                <div
+                    style="background: #e8f5e9; border-radius: 30px; padding: 40px; text-align: center; font-size: 80px; color: #00a86b;">
+                    <i class="fas fa-dog"></i> <i class="fas fa-cat"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== УСЛУГИ (SERVICES) ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши <span style="color: #00a86b;">услуги</span></h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <i class="fas fa-stethoscope service-card__icon"></i>
+                    <h3>Терапия</h3>
+                    <ul>
+                        <li>Первичный приём</li>
+                        <li>Вакцинация</li>
+                        <li>Чипирование</li>
+                        <li>Ветпаспорт</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bed service-card__icon"></i>
+                    <h3>Стационар</h3>
+                    <ul>
+                        <li>Дневной</li>
+                        <li>Хирургический</li>
+                        <li>ОРИТ</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microscope service-card__icon"></i>
+                    <h3>Диагностика</h3>
+                    <ul>
+                        <li>Компьютерная томография</li>
+                        <li>УЗИ</li>
+                        <li>Рентген</li>
+                        <li>Эндоскопия</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-syringe service-card__icon"></i>
+                    <h3>Хирургия</h3>
+                    <ul>
+                        <li>Плановая</li>
+                        <li>Экстренная</li>
+                        <li>Кастрация</li>
+                        <li>Ортопедия</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask service-card__icon"></i>
+                    <h3>Лаборатория</h3>
+                    <ul>
+                        <li>Клинические анализы</li>
+                        <li>Биохимия</li>
+                        <li>Гормоны</li>
+                        <li>Паразиты</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dumbbell service-card__icon"></i>
+                    <h3>Реабилитация</h3>
+                    <ul>
+                        <li>Физиотерапия</li>
+                        <li>Гидротерапия</li>
+                        <li>ЛФК</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== АКЦИИ (PROMO) ========== -->
+    <section class="promo" id="promo" style="background: #f0fdf4;">
+        <div class="container">
+            <h2 class="section-title">Акции <span style="color: #00a86b;">августа</span></h2>
+            <div class="promo__grid">
+                <div class="promo-card">
+                    <span class="promo-card__badge">🔥 Скидка</span>
+                    <h3>Стерилизация собак</h3>
+                    <p>Социальная акция для ваших питомцев</p>
+                    <div class="promo-card__price">42 703 тг</div>
+                    <span class="promo-card__date">1–31 августа 2026</span>
+                </div>
+                <div class="promo-card">
+                    <span class="promo-card__badge">🦷 Забота</span>
+                    <h3>Санация ротовой полости</h3>
+                    <p>Комплексная чистка зубов</p>
+                    <div class="promo-card__price">20 000 тг</div>
+                    <span class="promo-card__date">1–31 августа 2026</span>
+                </div>
+                <div class="promo-card promo-card--big">
+                    <span class="promo-card__badge">⭐ Единая организация</span>
+                    <h3>АКА</h3>
+                    <p>Специальные условия для членов ассоциации</p>
+                    <a href="#" class="btn btn--small">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== КОНТАКТЫ И ЗАПИСЬ ========== -->
+    <section class="contacts" id="contacts">
+        <div class="container contacts__inner">
+            <div class="contacts__info">
+                <h2 class="section-title">Свяжитесь с <span style="color: #00a86b;">нами</span></h2>
+                <p><i class="fas fa-map-marker-alt" style="color: #00a86b;"></i> г. Алматы, ул. Сейфулина, 198</p>
+                <p><i class="fas fa-phone" style="color: #00a86b;"></i> +7 (727) 243-63-55</p>
+                <p><i class="fas fa-envelope" style="color: #00a86b;"></i> info@vetstar.kz</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="contacts__form" id="appointment">
+                <h3>Запись на приём</h3>
+                <form>
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="text" placeholder="Кличка питомца">
+                    <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ПОДВАЛ ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 VetStar. Забота о ваших питомцах.</p>
+        </div>
+    </footer>
+
+    <!-- Подключаем JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
